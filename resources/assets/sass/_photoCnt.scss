@@ -1,0 +1,20 @@
+.clothes_cnt{
+   margin: 0 -35px;
+
+   .products_infos{
+      padding: 20px;
+
+      a{
+         color: black;
+         text-decoration: none;
+
+         .name_prod{
+            font-weight: bold;
+         }
+
+         p{
+            margin-bottom: 0;
+         }
+      }
+   }
+}
