@@ -1,3 +1,11 @@
+*{
+   font-family: 'Lato', sans-serif;
+}
+
+body{
+   background-color: white;
+}
+
 header{
    //black bar
    .top_bar{
@@ -9,6 +17,24 @@ header{
       .menu_itms{
          text-decoration: none;
          color: white;
+      }
+
+      form{
+         display: inline-block;
+         position: relative;
+      }
+      button{
+         border-style: none;
+         background-color: white;
+         outline: none;
+         margin-right: -5px;
+         border-radius: 2px;
+      }
+
+      input{
+         border-style: none;
+         border-radius: 2px;
+         outline: none;
       }
    }
 

@@ -13,19 +13,21 @@
                50% on all men's glasses for a limited time
             </div>
             <div class="col text-right align-self-center">
-               <span><a class="top_bar menu_itms" href="#">Log in or create account</a></span>
+               <span><a class="top_bar menu_itms" href="#">Log in or Create an account</a></span>
                <span><a class="top_bar menu_itms" href="#">Cart</a></span>
-               <button type="button" name="button"><i class="fas fa-search"></i></button>
-               <input type="search" name="" value="">
+               <form class="" action="" method="post">
+                  <button type="button" name="button"><i class="fas fa-search"></i></button>
+                  <input type="search" name="" value="" placeholder="Search...">
+               </form>
             </div>
          </div>
          <div class="container">
             <div class="row logo_bar">
                <div id="logo_img" class="col-4">
-                  <img class="align-self-center" src="img/logo.png" alt="">
+                  <img class="align-self-center" src="{{asset('img/logo.png')}}" alt="">
                </div>
                <div id="shop_menu" class="col-md-8 align-self-center text-right">
-                  <span><a class="menu_itms" href="#">Home</a></span>
+                  <span><a class="menu_itms" href="{{route('home')}}">Home</a></span>
                   <span><a class="menu_itms" href="#">Man</a></span>
                   <span><a class="menu_itms" href="#">Woman</a></span>
                   <span><a class="menu_itms" href="#">Accessories</a></span>

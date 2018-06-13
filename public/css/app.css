@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Lato:400,700);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10411,6 +10411,14 @@ a.text-dark:focus {
   }
 }
 
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
 header .top_bar {
   background-color: #423E3A;
   color: white;
@@ -10421,6 +10429,25 @@ header .top_bar {
 header .top_bar .menu_itms {
   text-decoration: none;
   color: white;
+}
+
+header .top_bar form {
+  display: inline-block;
+  position: relative;
+}
+
+header .top_bar button {
+  border-style: none;
+  background-color: white;
+  outline: none;
+  margin-right: -5px;
+  border-radius: 2px;
+}
+
+header .top_bar input {
+  border-style: none;
+  border-radius: 2px;
+  outline: none;
 }
 
 header .logo_bar {
@@ -10478,7 +10505,20 @@ footer #footer_row {
 }
 
 .details_cnt {
-  margin: 0 30px;
+  margin: 100px -15px;
+}
+
+.details_cnt .picture_cnt {
+  padding-left: 0;
+}
+
+.details_cnt .article_desc * {
+  font-weight: bold;
+  color: #403b37;
+}
+
+.details_cnt #price {
+  color: #f25c54;
 }
 
 .navbar-laravel {

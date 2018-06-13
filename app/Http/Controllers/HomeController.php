@@ -47,11 +47,6 @@ class HomeController extends Controller
 
    public function details($idDesc) {
 
-      // foreach ($this->products as $product) {
-      //    if($product['id'] == $idDesc){
-      //       $thisProduct = $product;
-      //    }
-      // }
       $isFound = false;
       $count = 0;
 

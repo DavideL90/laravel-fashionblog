@@ -1,3 +1,16 @@
 .details_cnt{
-   margin: 0 30px;
+   margin: 100px -15px;
+
+   .picture_cnt{
+      padding-left: 0;
+   }
+
+   .article_desc *{
+      font-weight: bold;
+      color: #403b37;
+   }
+
+   #price{
+      color: #f25c54;
+   }
 }
