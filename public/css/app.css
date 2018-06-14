@@ -10504,6 +10504,19 @@ footer #footer_row {
   margin-bottom: 0;
 }
 
+.add_element input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.add_element textarea {
+  margin-bottom: 20px;
+}
+
+.add_element input[type=submit] {
+  width: 100px;
+}
+
 .details_cnt {
   margin: 100px -15px;
 }

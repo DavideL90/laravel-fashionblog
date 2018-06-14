@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dress;
 
 class HomeController extends Controller
 {
@@ -40,7 +41,6 @@ class HomeController extends Controller
       'image' => 'http://cdn.shopify.com/s/files/1/0153/0845/products/09-29_Womens_Hope_FINAL-31_1024x1024@2x.jpg?v=1510853215'
     ],
 ];
-
     public function index() {
       return view('homepage.home', ['products' => $this->products]);
    }
@@ -64,5 +64,19 @@ class HomeController extends Controller
       } while ($isFound == false);
 
       return view('details.details', $thisProduct);
+   }
+
+   public function save(Request $request){
+      $new_dress = new Dress();
+
+      $new_dress->name = $request->input('name');
+      $new_dress->brand = $request->input('brand');
+      $new_dress->price = $request->input('price');
+      $new_dress->image = $request->input('image');
+
+      $new_dress->description = $request->input('description');
+
+      $new_dress->save();
+
    }
 }

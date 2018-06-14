@@ -14,3 +14,5 @@
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/details/{idDesc}', 'HomeController@details')->name('info');
+
+Route::post('/add', 'HomeController@save')->name('add');
